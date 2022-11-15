@@ -1,0 +1,64 @@
+{
+    "name": "juststeveking/password-generator",
+    "description": "Generate random, memorable passwords easily.",
+    "homepage": "https://github.com/juststeveking/password-generator",
+    "license": "MIT",
+    "authors": [
+        {
+            "role": "Developer",
+            "name": "Steve McDougall",
+            "email": "juststevemcd@gmail.com",
+            "homepage": "https://www.juststeveking.uk/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "JustSteveKing\\PasswordGenerator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JustSteveKing\\PasswordGenerator\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "illuminate/contracts": "^9.25"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.1",
+        "nunomaduro/larastan": "^2.1",
+        "orchestra/testbench": "^7.6",
+        "pestphp/pest": "^1.21"
+    },
+    "scripts": {
+        "test": "./vendor/bin/pest",
+        "pint": "./vendor/bin/pint",
+        "stan": "./vendor/bin/phpstan analyse"
+    },
+    "scripts-description": {
+        "test": "Run the Pest test suite.",
+        "pint": "Run Laravel Pint to fix any code style issues.",
+        "stan": "Run the static analysis checks."
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JustSteveKing\\PasswordGenerator\\Providers\\PackageServiceProvider"
+            ],
+            "aliases": {
+                "Generator": "JustSteveKing\\PasswordGenerator\\Facades\\Generator"
+            }
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
