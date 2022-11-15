@@ -9,6 +9,7 @@ use JustSteveKing\PasswordGenerator\Contracts\GeneratorContract;
 
 /**
  * @method static string generate()
+ * @method static string generateSecure()
  *
  * @see GeneratorContract
  */
