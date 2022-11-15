@@ -1,8 +1,8 @@
 # Password Generator
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/juststeveking/password-generator.svg?style=flat-square)](https://packagist.org/packages/getsendstack/laravel-sendstack)
-[![Test Suite](https://github.com/juststeveking/password-generator/actions/workflows/tests.yml/badge.svg)](https://github.com/getsendstack/laravel-sendstack/actions/workflows/tests.yml)
-[![Total Downloads](https://img.shields.io/packagist/dt/juststeveking/password-generator.svg?style=flat-square)](https://packagist.org/packages/getsendstack/laravel-sendstack)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/juststeveking/password-generator.svg?style=flat-square)](https://packagist.org/packages/juststeveking/password-generator)
+[![Test Suite](https://github.com/juststeveking/password-generator/actions/workflows/tests.yml/badge.svg)](https://github.com/juststeveking/password-generator/actions/workflows/tests.yml)
+[![Total Downloads](https://img.shields.io/packagist/dt/juststeveking/password-generator.svg?style=flat-square)](https://packagist.org/packages/juststeveking/password-generator)
 <!--delete-->
 
 ## Installation
