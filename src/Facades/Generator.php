@@ -15,7 +15,10 @@ use JustSteveKing\PasswordGenerator\Contracts\GeneratorContract;
  */
 final class Generator extends Facade
 {
-    protected static function getFacadeAccessor()
+    /**
+     * @return class-string
+     */
+    protected static function getFacadeAccessor(): string
     {
         return GeneratorContract::class;
     }

@@ -17,17 +17,26 @@ final class PasswordGenerator implements GeneratorContract
 
     public function generate(): string
     {
-        $password = "{$this->nouns->random()}-{$this->adjectives->random()}";
-        $password .= "-{$this->nouns->random()}-{$this->adjectives->random()}";
-
-        return $password;
+        return $this->build(
+            $this->nouns->random(),
+            $this->adjectives->random(),
+            $this->nouns->random(),
+            $this->adjectives->random(),
+        );
     }
 
     public function generateSecure(): string
     {
-        $password = "{$this->nouns->secure()}-{$this->adjectives->secure()}";
-        $password .= "-{$this->nouns->secure()}-{$this->adjectives->secure()}";
+        return $this->build(
+            $this->nouns->secure(),
+            $this->adjectives->secure(),
+            $this->nouns->secure(),
+            $this->adjectives->secure(),
+        );
+    }
 
-        return $password;
+    private function build(string ...$parts): string
+    {
+        return implode('-', $parts);
     }
 }
